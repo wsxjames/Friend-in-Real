@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CD5301C4726865703E4DB6B /* libPods-Friend in Real.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB7AEA9CB9747DC717D4C09 /* libPods-Friend in Real.a */; };
 		9B89AE15241DC696008B1AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE14241DC696008B1AEA /* AppDelegate.swift */; };
 		9B89AE17241DC696008B1AEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE16241DC696008B1AEA /* SceneDelegate.swift */; };
 		9B89AE19241DC696008B1AEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE18241DC696008B1AEA /* ViewController.swift */; };
@@ -14,9 +15,19 @@
 		9B89AE1F241DC696008B1AEA /* Friend_in_Real.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE1D241DC696008B1AEA /* Friend_in_Real.xcdatamodeld */; };
 		9B89AE21241DC699008B1AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B89AE20241DC699008B1AEA /* Assets.xcassets */; };
 		9B89AE24241DC699008B1AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B89AE22241DC699008B1AEA /* LaunchScreen.storyboard */; };
+		9B89AE2D241DCD23008B1AEA /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B89AE2C241DCD23008B1AEA /* Map.storyboard */; };
+		9B89AE2F241DD079008B1AEA /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B89AE2E241DD079008B1AEA /* Me.storyboard */; };
+		9B89AE31241DD8DE008B1AEA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE30241DD8DE008B1AEA /* MapViewController.swift */; };
+		9B89AE33241DDF96008B1AEA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE32241DDF96008B1AEA /* Event.swift */; };
+		9BD9E29D241EEDC700624F09 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9E29C241EEDC700624F09 /* NetworkService.swift */; };
+		9BDE5439241EF86C005A6964 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE5438241EF86C005A6964 /* Test.swift */; };
+		9BDE543C241EFE93005A6964 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE543B241EFE93005A6964 /* Business.swift */; };
+		9BDE5463241F44FF005A6964 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE5462241F44FF005A6964 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D783D4D5CA8C86A9B29A632 /* Pods-Friend in Real.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friend in Real.release.xcconfig"; path = "Target Support Files/Pods-Friend in Real/Pods-Friend in Real.release.xcconfig"; sourceTree = "<group>"; };
+		7671990BD432211799F042CA /* Pods-Friend in Real.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friend in Real.debug.xcconfig"; path = "Target Support Files/Pods-Friend in Real/Pods-Friend in Real.debug.xcconfig"; sourceTree = "<group>"; };
 		9B89AE11241DC696008B1AEA /* Friend in Real.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friend in Real.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B89AE14241DC696008B1AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B89AE16241DC696008B1AEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,15 @@
 		9B89AE20241DC699008B1AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B89AE23241DC699008B1AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B89AE25241DC699008B1AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B89AE2C241DCD23008B1AEA /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		9B89AE2E241DD079008B1AEA /* Me.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		9B89AE30241DD8DE008B1AEA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9B89AE32241DDF96008B1AEA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9BD9E29C241EEDC700624F09 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9BDE5438241EF86C005A6964 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		9BDE543B241EFE93005A6964 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		9BDE5462241F44FF005A6964 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		CAB7AEA9CB9747DC717D4C09 /* libPods-Friend in Real.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Friend in Real.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD5301C4726865703E4DB6B /* libPods-Friend in Real.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75E4A19C94064FB2F5C4D2BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB7AEA9CB9747DC717D4C09 /* libPods-Friend in Real.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B89AE08241DC696008B1AEA = {
 			isa = PBXGroup;
 			children = (
 				9B89AE13241DC696008B1AEA /* Friend in Real */,
 				9B89AE12241DC696008B1AEA /* Products */,
+				FAE9944719437EBDD3E49B9A /* Pods */,
+				75E4A19C94064FB2F5C4D2BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +89,57 @@
 		9B89AE13241DC696008B1AEA /* Friend in Real */ = {
 			isa = PBXGroup;
 			children = (
+				9BDE543A241EFE79005A6964 /* Models */,
+				9BD9E29B241EEDA500624F09 /* Services */,
+				9B89AE2B241DCCFA008B1AEA /* Storyboards */,
 				9B89AE14241DC696008B1AEA /* AppDelegate.swift */,
-				9B89AE16241DC696008B1AEA /* SceneDelegate.swift */,
+				9B89AE30241DD8DE008B1AEA /* MapViewController.swift */,
+				9B89AE32241DDF96008B1AEA /* Event.swift */,
+				9BDE5438241EF86C005A6964 /* Test.swift */,
+				9BDE5462241F44FF005A6964 /* ButtonView.swift */,
 				9B89AE18241DC696008B1AEA /* ViewController.swift */,
-				9B89AE1A241DC696008B1AEA /* Main.storyboard */,
+				9B89AE16241DC696008B1AEA /* SceneDelegate.swift */,
 				9B89AE20241DC699008B1AEA /* Assets.xcassets */,
 				9B89AE22241DC699008B1AEA /* LaunchScreen.storyboard */,
 				9B89AE25241DC699008B1AEA /* Info.plist */,
 				9B89AE1D241DC696008B1AEA /* Friend_in_Real.xcdatamodeld */,
 			);
 			path = "Friend in Real";
+			sourceTree = "<group>";
+		};
+		9B89AE2B241DCCFA008B1AEA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9B89AE2C241DCD23008B1AEA /* Map.storyboard */,
+				9B89AE1A241DC696008B1AEA /* Main.storyboard */,
+				9B89AE2E241DD079008B1AEA /* Me.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9BD9E29B241EEDA500624F09 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9BD9E29C241EEDC700624F09 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9BDE543A241EFE79005A6964 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BDE543B241EFE93005A6964 /* Business.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAE9944719437EBDD3E49B9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7671990BD432211799F042CA /* Pods-Friend in Real.debug.xcconfig */,
+				3D783D4D5CA8C86A9B29A632 /* Pods-Friend in Real.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +149,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B89AE28241DC699008B1AEA /* Build configuration list for PBXNativeTarget "Friend in Real" */;
 			buildPhases = (
+				8A338419B1B9DD0D2BF13D1C /* [CP] Check Pods Manifest.lock */,
 				9B89AE0D241DC696008B1AEA /* Sources */,
 				9B89AE0E241DC696008B1AEA /* Frameworks */,
 				9B89AE0F241DC696008B1AEA /* Resources */,
+				289A45244B663FE09329CB06 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Friend in Real";
+			packageProductDependencies = (
+			);
 			productName = "Friend in Real";
 			productReference = 9B89AE11241DC696008B1AEA /* Friend in Real.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +190,8 @@
 				Base,
 			);
 			mainGroup = 9B89AE08241DC696008B1AEA;
+			packageReferences = (
+			);
 			productRefGroup = 9B89AE12241DC696008B1AEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,11 +208,55 @@
 			files = (
 				9B89AE24241DC699008B1AEA /* LaunchScreen.storyboard in Resources */,
 				9B89AE21241DC699008B1AEA /* Assets.xcassets in Resources */,
+				9B89AE2F241DD079008B1AEA /* Me.storyboard in Resources */,
 				9B89AE1C241DC696008B1AEA /* Main.storyboard in Resources */,
+				9B89AE2D241DCD23008B1AEA /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		289A45244B663FE09329CB06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Friend in Real/Pods-Friend in Real-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Friend in Real/Pods-Friend in Real-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Friend in Real/Pods-Friend in Real-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A338419B1B9DD0D2BF13D1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Friend in Real-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B89AE0D241DC696008B1AEA /* Sources */ = {
@@ -143,8 +265,14 @@
 			files = (
 				9B89AE1F241DC696008B1AEA /* Friend_in_Real.xcdatamodeld in Sources */,
 				9B89AE19241DC696008B1AEA /* ViewController.swift in Sources */,
+				9BDE5463241F44FF005A6964 /* ButtonView.swift in Sources */,
 				9B89AE15241DC696008B1AEA /* AppDelegate.swift in Sources */,
+				9B89AE31241DD8DE008B1AEA /* MapViewController.swift in Sources */,
+				9B89AE33241DDF96008B1AEA /* Event.swift in Sources */,
+				9BDE5439241EF86C005A6964 /* Test.swift in Sources */,
+				9BDE543C241EFE93005A6964 /* Business.swift in Sources */,
 				9B89AE17241DC696008B1AEA /* SceneDelegate.swift in Sources */,
+				9BD9E29D241EEDC700624F09 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +414,7 @@
 		};
 		9B89AE29241DC699008B1AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7671990BD432211799F042CA /* Pods-Friend in Real.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +433,7 @@
 		};
 		9B89AE2A241DC699008B1AEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D783D4D5CA8C86A9B29A632 /* Pods-Friend in Real.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
