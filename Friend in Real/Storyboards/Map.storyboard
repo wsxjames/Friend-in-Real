@@ -19,7 +19,7 @@
                                 <rect key="frame" x="87" y="464" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyC-1s-fPc">
-                                        <rect key="frame" x="99" y="17" width="42" height="21"/>
+                                        <rect key="frame" x="0.0" y="17" width="141" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -29,6 +29,9 @@
                                         <rect key="frame" x="97" y="70" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="JAp-cw-2OT" kind="show" id="otX-Vp-OE0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -50,12 +53,23 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ButtonView" destination="7Sb-vo-1PB" id="ANS-UT-PJY"/>
+                        <outlet property="buttonViewLabel" destination="VyC-1s-fPc" id="jxo-Ej-JRx"/>
                         <outlet property="mapView" destination="G3G-pg-1gJ" id="gWh-0o-TPq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFg-a9-4gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1507.2463768115942" y="1765.8482142857142"/>
+            <point key="canvasLocation" x="-2006" y="2641"/>
+        </scene>
+        <!--Swipe-->
+        <scene sceneID="1Pt-HJ-UWz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Swipe" id="JAp-cw-2OT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Aao-JM-qoA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcV-ZY-OMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-940" y="2672"/>
         </scene>
     </scenes>
 </document>
