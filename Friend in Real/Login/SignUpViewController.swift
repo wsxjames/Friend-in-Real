@@ -60,10 +60,10 @@ class SignUpViewController: UIViewController {
         // Check if the password is secure
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        if Utilities.isPasswordValid(cleanedPassword) == false {
-            // Password isn't secure enough
-            return "Please make sure your password is at least 8 characters, contains a special character and a number."
-        }
+//        if Utilities.isPasswordValid(cleanedPassword) == false {
+//            // Password isn't secure enough
+//            return "Please make sure your password is at least 8 characters, contains a special character and a number."
+//        }
         
         return nil
     }
@@ -101,7 +101,7 @@ class SignUpViewController: UIViewController {
                     // User was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid ]) { (error) in
+                    db.collection("Users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid ]) { (error) in
                         
                         if error != nil {
                             // Show error message
@@ -128,7 +128,8 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome() {
         
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.mapViewController) as? MapViewController
+         let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(identifier: "HomeViewController") as? UITabBarController
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()

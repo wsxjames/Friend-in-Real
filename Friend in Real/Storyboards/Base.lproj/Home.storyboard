@@ -19,7 +19,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kg2-DJ-bNJ">
             <objects>
-                <tabBarController storyboardIdentifier="HomeViewController" id="UNg-4v-zVc" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UNg-4v-zVc" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="I" id="7Yj-lk-Nzu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="-377" y="36"/>
         </scene>
-        <!--Me-->
+        <!--Profile-->
         <scene sceneID="7IZ-10-JnS">
             <objects>
-                <viewControllerPlaceholder storyboardName="Me" id="17t-YB-Qgn" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Profile" id="17t-YB-Qgn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="EPT-E7-yfR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwM-l1-iHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

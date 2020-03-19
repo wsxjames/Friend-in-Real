@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let windowScene = UIWindowScene(session: session, connectionOptions: connectionOptions)
 //        self.window = UIWindow(windowScene: windowScene)
 //        //self.window =  UIWindow(frame: UIScreen.main.bounds)
-//        let storyboard = UIStoryboard(name: "Map", bundle: nil)
-//        guard let rootVC = storyboard.instantiateViewController(identifier: "MapViewController") as? ViewController else {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        guard let rootVC = storyboard.instantiateViewController(identifier: "HomeViewController") as? ViewController else {
 //            print("ViewController not found")
 //            return
 //        }
@@ -30,6 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        self.window?.makeKeyAndVisible()
         
         guard let _ = (scene as? UIWindowScene) else { return }
+        
 
     }
 

@@ -64,7 +64,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
 //        downloadImage(from: view.annotation!)
         self.buttonViewLabel.text="No"
-        db.collection("Events").whereField("location", isEqualTo: [lat,long]).getDocuments() { (querySnapshot, err) in
+        db.collection("Events").whereField("coordinates", isEqualTo: [lat,long]).getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {

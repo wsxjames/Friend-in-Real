@@ -10,7 +10,7 @@
         <!--Login Signup View Controller-->
         <scene sceneID="ILh-0B-Dq7">
             <objects>
-                <viewController storyboardIdentifier="LoginSignUpViewController" id="gVF-MQ-WJ7" customClass="LoginSignupViewController" customModule="Friend_in_Real" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gVF-MQ-WJ7" customClass="LoginSignupViewController" customModule="Friend_in_Real" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="43q-Zw-dzN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,8 +51,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="SoT-mh-6LI"/>
                     <connections>
-                        <outlet property="loginButton" destination="zHn-Ne-p8h" id="Sri-2y-MF0"/>
-                        <outlet property="signUpButton" destination="Myt-Ua-vnt" id="lmm-eE-P53"/>
+                        <outlet property="loginButton" destination="zHn-Ne-p8h" id="xvD-rZ-aOa"/>
+                        <outlet property="signUpButton" destination="Myt-Ua-vnt" id="SLc-qo-ouD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6n-DD-oiJ" sceneMemberID="firstResponder"/>
@@ -72,9 +72,10 @@
         <!--Navigation Controller-->
         <scene sceneID="noS-HN-j7v">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fml-Mb-200" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginSignUpViewController" automaticallyAdjustsScrollViewInsets="NO" id="fml-Mb-200" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AQ2-z6-eXF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
