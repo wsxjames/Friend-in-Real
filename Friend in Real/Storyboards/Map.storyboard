@@ -10,7 +10,7 @@
         <!--Map View Controller-->
         <scene sceneID="7qB-wZ-4h9">
             <objects>
-                <viewController id="lJU-Kr-jf3" customClass="MapViewController" customModule="Friend_in_Real" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="lJU-Kr-jf3" customClass="MapViewController" customModule="Friend_in_Real" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RJ8-Ls-JxU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,11 +26,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-Fx-K6f">
-                                        <rect key="frame" x="97" y="70" width="46" height="30"/>
+                                        <rect key="frame" x="33" y="70" width="172" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="JAp-cw-2OT" kind="show" id="otX-Vp-OE0"/>
+                                            <action selector="buttonViewButtonPressed:" destination="lJU-Kr-jf3" eventType="touchUpInside" id="evY-0o-Edq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -41,7 +41,7 @@
                                 </constraints>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="G3G-pg-1gJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="854"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -53,13 +53,41 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ButtonView" destination="7Sb-vo-1PB" id="ANS-UT-PJY"/>
+                        <outlet property="buttonViewButton" destination="Nci-Fx-K6f" id="DeG-Dd-8Gt"/>
                         <outlet property="buttonViewLabel" destination="VyC-1s-fPc" id="jxo-Ej-JRx"/>
                         <outlet property="mapView" destination="G3G-pg-1gJ" id="gWh-0o-TPq"/>
+                        <segue destination="JAp-cw-2OT" kind="show" identifier="create" id="B2S-ds-asU"/>
+                        <segue destination="LN5-1x-bwG" kind="show" identifier="join" id="ZQy-Gf-P4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFg-a9-4gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2006" y="2641"/>
+            <point key="canvasLocation" x="-2007.2463768115942" y="2640.4017857142858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qvQ-hi-VMw">
+            <objects>
+                <viewController id="LN5-1x-bwG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GEs-Gp-BS9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Join" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-iK-qPk">
+                                <rect key="frame" x="247" y="312" width="32" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="led-FE-wpj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="apI-Sf-eMt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPC-cl-dks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="3132"/>
         </scene>
         <!--Swipe-->
         <scene sceneID="1Pt-HJ-UWz">

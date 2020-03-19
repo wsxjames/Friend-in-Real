@@ -35,7 +35,7 @@
         <!--Navigation Controller-->
         <scene sceneID="sdf-HW-d9m">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a4I-X8-vrX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MeStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="a4I-X8-vrX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Auf-0f-Epa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sp4-Bl-Lu9">

@@ -19,7 +19,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kg2-DJ-bNJ">
             <objects>
-                <tabBarController id="UNg-4v-zVc" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeViewController" id="UNg-4v-zVc" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="I" id="7Yj-lk-Nzu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

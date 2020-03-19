@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="f3I-ZO-bwQ">
             <objects>
-                <viewController id="kWD-av-DGi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwipeStoryboard" id="kWD-av-DGi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l8X-S5-SVR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,6 +22,13 @@
                                     <navigationItem title="Title" id="6Yf-9K-qMn"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-Dh-sNo">
+                                <rect key="frame" x="162" y="351" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qzW-mm-7Qd"/>

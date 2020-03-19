@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CD5301C4726865703E4DB6B /* libPods-Friend in Real.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB7AEA9CB9747DC717D4C09 /* libPods-Friend in Real.a */; };
+		9B03F08E2422DBBC005C6808 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B03F08D2422DBBC005C6808 /* SignUpViewController.swift */; };
+		9B03F0902422E0C6005C6808 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B03F08F2422E0C6005C6808 /* Constants.swift */; };
+		9B27A2582422D28700D4051A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27A2572422D28700D4051A /* LoginViewController.swift */; };
+		9B4447CF2422C31800302816 /* LoginSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4447CE2422C31800302816 /* LoginSignUp.storyboard */; };
+		9B4447D12422C3EF00302816 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4447D02422C3EF00302816 /* Utilities.swift */; };
+		9B4447D32422C40B00302816 /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4447D22422C40B00302816 /* LoginSignupViewController.swift */; };
+		9B4447D52422C54700302816 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4447D42422C54700302816 /* Login.storyboard */; };
+		9B4447D72422C5CB00302816 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4447D62422C5CB00302816 /* Signup.storyboard */; };
 		9B89AE15241DC696008B1AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE14241DC696008B1AEA /* AppDelegate.swift */; };
 		9B89AE17241DC696008B1AEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE16241DC696008B1AEA /* SceneDelegate.swift */; };
 		9B89AE19241DC696008B1AEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89AE18241DC696008B1AEA /* ViewController.swift */; };
@@ -25,11 +32,20 @@
 		9BDE5463241F44FF005A6964 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE5462241F44FF005A6964 /* ButtonView.swift */; };
 		9BDE5469241F5753005A6964 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE5468241F5753005A6964 /* ButtonViewController.swift */; };
 		9BDE546B241F609C005A6964 /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDE546A241F609C005A6964 /* Swipe.storyboard */; };
+		9BDE546F24215B8D005A6964 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BDE546E24215B8D005A6964 /* GoogleService-Info.plist */; };
+		B1162EBF08F8C7C2275C08C9 /* Pods_Friend_in_Real.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833A9DBF70C1C5A3E3BA0F09 /* Pods_Friend_in_Real.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D783D4D5CA8C86A9B29A632 /* Pods-Friend in Real.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friend in Real.release.xcconfig"; path = "Target Support Files/Pods-Friend in Real/Pods-Friend in Real.release.xcconfig"; sourceTree = "<group>"; };
-		7671990BD432211799F042CA /* Pods-Friend in Real.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friend in Real.debug.xcconfig"; path = "Target Support Files/Pods-Friend in Real/Pods-Friend in Real.debug.xcconfig"; sourceTree = "<group>"; };
+		833A9DBF70C1C5A3E3BA0F09 /* Pods_Friend_in_Real.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Friend_in_Real.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B03F08D2422DBBC005C6808 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9B03F08F2422E0C6005C6808 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9B27A2572422D28700D4051A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B4447CE2422C31800302816 /* LoginSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignUp.storyboard; sourceTree = "<group>"; };
+		9B4447D02422C3EF00302816 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9B4447D22422C40B00302816 /* LoginSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
+		9B4447D42422C54700302816 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9B4447D62422C5CB00302816 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		9B89AE11241DC696008B1AEA /* Friend in Real.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friend in Real.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B89AE14241DC696008B1AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B89AE16241DC696008B1AEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +65,9 @@
 		9BDE5462241F44FF005A6964 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		9BDE5468241F5753005A6964 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		9BDE546A241F609C005A6964 /* Swipe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swipe.storyboard; sourceTree = "<group>"; };
-		CAB7AEA9CB9747DC717D4C09 /* libPods-Friend in Real.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Friend in Real.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDE546E24215B8D005A6964 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5A957FCBC48E72A44852EF8 /* Pods-Friend in Real.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friend in Real.debug.xcconfig"; path = "Target Support Files/Pods-Friend in Real/Pods-Friend in Real.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C2BA7A1C5CF44316B29B43 /* Pods-Friend in Real.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friend in Real.release.xcconfig"; path = "Target Support Files/Pods-Friend in Real/Pods-Friend in Real.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,19 +75,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD5301C4726865703E4DB6B /* libPods-Friend in Real.a in Frameworks */,
+				B1162EBF08F8C7C2275C08C9 /* Pods_Friend_in_Real.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		75E4A19C94064FB2F5C4D2BB /* Frameworks */ = {
+		9B4447CD2422C2C400302816 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				CAB7AEA9CB9747DC717D4C09 /* libPods-Friend in Real.a */,
+				9B4447CE2422C31800302816 /* LoginSignUp.storyboard */,
+				9B4447D02422C3EF00302816 /* Utilities.swift */,
+				9B4447D22422C40B00302816 /* LoginSignupViewController.swift */,
+				9B4447D42422C54700302816 /* Login.storyboard */,
+				9B4447D62422C5CB00302816 /* Signup.storyboard */,
+				9B27A2572422D28700D4051A /* LoginViewController.swift */,
+				9B03F08D2422DBBC005C6808 /* SignUpViewController.swift */,
+				9B03F08F2422E0C6005C6808 /* Constants.swift */,
 			);
-			name = Frameworks;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		9B89AE08241DC696008B1AEA = {
@@ -78,7 +103,7 @@
 				9B89AE13241DC696008B1AEA /* Friend in Real */,
 				9B89AE12241DC696008B1AEA /* Products */,
 				FAE9944719437EBDD3E49B9A /* Pods */,
-				75E4A19C94064FB2F5C4D2BB /* Frameworks */,
+				FD59FA819DCF784A7081DB57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +118,7 @@
 		9B89AE13241DC696008B1AEA /* Friend in Real */ = {
 			isa = PBXGroup;
 			children = (
+				9B4447CD2422C2C400302816 /* Login */,
 				9BDE543A241EFE79005A6964 /* Models */,
 				9BD9E29B241EEDA500624F09 /* Services */,
 				9B89AE2B241DCCFA008B1AEA /* Storyboards */,
@@ -104,6 +130,7 @@
 				9BDE5462241F44FF005A6964 /* ButtonView.swift */,
 				9B89AE18241DC696008B1AEA /* ViewController.swift */,
 				9B89AE16241DC696008B1AEA /* SceneDelegate.swift */,
+				9BDE546E24215B8D005A6964 /* GoogleService-Info.plist */,
 				9B89AE20241DC699008B1AEA /* Assets.xcassets */,
 				9B89AE22241DC699008B1AEA /* LaunchScreen.storyboard */,
 				9B89AE25241DC699008B1AEA /* Info.plist */,
@@ -142,10 +169,18 @@
 		FAE9944719437EBDD3E49B9A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7671990BD432211799F042CA /* Pods-Friend in Real.debug.xcconfig */,
-				3D783D4D5CA8C86A9B29A632 /* Pods-Friend in Real.release.xcconfig */,
+				A5A957FCBC48E72A44852EF8 /* Pods-Friend in Real.debug.xcconfig */,
+				F4C2BA7A1C5CF44316B29B43 /* Pods-Friend in Real.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD59FA819DCF784A7081DB57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				833A9DBF70C1C5A3E3BA0F09 /* Pods_Friend_in_Real.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B89AE28241DC699008B1AEA /* Build configuration list for PBXNativeTarget "Friend in Real" */;
 			buildPhases = (
-				8A338419B1B9DD0D2BF13D1C /* [CP] Check Pods Manifest.lock */,
+				B3999DBF7DE400669D3CDFCB /* [CP] Check Pods Manifest.lock */,
 				9B89AE0D241DC696008B1AEA /* Sources */,
 				9B89AE0E241DC696008B1AEA /* Frameworks */,
 				9B89AE0F241DC696008B1AEA /* Resources */,
+				99D7508DA890E24819A338D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,13 +249,34 @@
 				9B89AE1C241DC696008B1AEA /* Main.storyboard in Resources */,
 				9B89AE2D241DCD23008B1AEA /* Map.storyboard in Resources */,
 				9BDE546B241F609C005A6964 /* Swipe.storyboard in Resources */,
+				9BDE546F24215B8D005A6964 /* GoogleService-Info.plist in Resources */,
+				9B4447CF2422C31800302816 /* LoginSignUp.storyboard in Resources */,
+				9B4447D72422C5CB00302816 /* Signup.storyboard in Resources */,
+				9B4447D52422C54700302816 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A338419B1B9DD0D2BF13D1C /* [CP] Check Pods Manifest.lock */ = {
+		99D7508DA890E24819A338D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Friend in Real/Pods-Friend in Real-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Friend in Real/Pods-Friend in Real-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Friend in Real/Pods-Friend in Real-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3999DBF7DE400669D3CDFCB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,16 +305,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B27A2582422D28700D4051A /* LoginViewController.swift in Sources */,
 				9B89AE1F241DC696008B1AEA /* Friend_in_Real.xcdatamodeld in Sources */,
 				9B89AE19241DC696008B1AEA /* ViewController.swift in Sources */,
 				9BDE5463241F44FF005A6964 /* ButtonView.swift in Sources */,
 				9B89AE15241DC696008B1AEA /* AppDelegate.swift in Sources */,
 				9B89AE31241DD8DE008B1AEA /* MapViewController.swift in Sources */,
 				9B89AE33241DDF96008B1AEA /* Event.swift in Sources */,
+				9B03F0902422E0C6005C6808 /* Constants.swift in Sources */,
+				9B4447D12422C3EF00302816 /* Utilities.swift in Sources */,
 				9BDE5439241EF86C005A6964 /* Test.swift in Sources */,
+				9B03F08E2422DBBC005C6808 /* SignUpViewController.swift in Sources */,
 				9BDE543C241EFE93005A6964 /* Business.swift in Sources */,
 				9B89AE17241DC696008B1AEA /* SceneDelegate.swift in Sources */,
 				9BD9E29D241EEDC700624F09 /* NetworkService.swift in Sources */,
+				9B4447D32422C40B00302816 /* LoginSignupViewController.swift in Sources */,
 				9BDE5469241F5753005A6964 /* ButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +462,7 @@
 		};
 		9B89AE29241DC699008B1AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7671990BD432211799F042CA /* Pods-Friend in Real.debug.xcconfig */;
+			baseConfigurationReference = A5A957FCBC48E72A44852EF8 /* Pods-Friend in Real.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,7 +481,7 @@
 		};
 		9B89AE2A241DC699008B1AEA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D783D4D5CA8C86A9B29A632 /* Pods-Friend in Real.release.xcconfig */;
+			baseConfigurationReference = F4C2BA7A1C5CF44316B29B43 /* Pods-Friend in Real.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

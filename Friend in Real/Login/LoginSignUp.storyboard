@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fml-Mb-200">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Signup View Controller-->
+        <scene sceneID="ILh-0B-Dq7">
+            <objects>
+                <viewController storyboardIdentifier="LoginSignUpViewController" id="gVF-MQ-WJ7" customClass="LoginSignupViewController" customModule="Friend_in_Real" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="43q-Zw-dzN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BQz-ND-P5d">
+                                <rect key="frame" x="40" y="702" width="334" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHn-Ne-p8h">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <segue destination="Zas-ux-zDK" kind="show" id="oTv-oc-I0q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myt-Ua-vnt">
+                                        <rect key="frame" x="0.0" y="70" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WqN-4s-8gb"/>
+                                        </constraints>
+                                        <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="QaX-Mz-fDa" kind="show" id="X3Q-oe-dzx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zHn-Ne-p8h" firstAttribute="height" secondItem="Myt-Ua-vnt" secondAttribute="height" id="teq-rg-5rV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xmq-cT-Wyi" firstAttribute="trailing" secondItem="BQz-ND-P5d" secondAttribute="trailing" constant="40" id="7qQ-xR-tBa"/>
+                            <constraint firstItem="Xmq-cT-Wyi" firstAttribute="bottom" secondItem="BQz-ND-P5d" secondAttribute="bottom" constant="40" id="VAo-ut-vST"/>
+                            <constraint firstItem="BQz-ND-P5d" firstAttribute="leading" secondItem="Xmq-cT-Wyi" secondAttribute="leading" constant="40" id="k9H-tC-z8z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xmq-cT-Wyi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SoT-mh-6LI"/>
+                    <connections>
+                        <outlet property="loginButton" destination="zHn-Ne-p8h" id="Sri-2y-MF0"/>
+                        <outlet property="signUpButton" destination="Myt-Ua-vnt" id="lmm-eE-P53"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n6n-DD-oiJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="210"/>
+        </scene>
+        <!--Signup-->
+        <scene sceneID="QI4-Pw-4za">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Signup" id="QaX-Mz-fDa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="weB-Ae-0ar"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsh-5z-eC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="noS-HN-j7v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fml-Mb-200" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AQ2-z6-eXF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gVF-MQ-WJ7" kind="relationship" relationship="rootViewController" id="MPS-OK-LsY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujr-Wz-cMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1571" y="210"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="ZUL-dG-xMc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="Zas-ux-zDK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oOr-JY-Pj0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rp-QT-Cll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="482"/>
+        </scene>
+    </scenes>
+</document>

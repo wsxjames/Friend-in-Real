@@ -8,28 +8,26 @@
 
 import UIKit
 import MapKit
+import Firebase
+//import FirebaseFirestore
+import Firebase
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet var mapView: MKMapView!
     var lat: Double = 0.0
     var long: Double = 0.0
-    let annotation=MKPointAnnotation()
+    let db = Firestore.firestore()
+    @IBOutlet var buttonViewButton: UIButton!
+    
+    
     @IBOutlet var ButtonView: UIView!
     @IBOutlet var buttonViewLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
-        //        var placesClient: GMSPlacesClient!
-        
-        // Do any additional setup after loading the view.
         annotateMap()
-        
-
     }
     
     
@@ -43,23 +41,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customannotation")
         annotationView.image = UIImage(named:"pin")
         annotationView.canShowCallout = true
-        //        let leftIconView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 53, height: 53))
-        //        leftIconView.image = UIImage(named: "sample")
-        //        let rightIconView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 53, height: 53))
-        //        rightIconView.image = UIImage(named: "sample")
-        //        annotationView.leftCalloutAccessoryView = leftIconView
-        //        let rightView: UIView={
-        //            let view=UIView(frame: CGRect(x:0,y:0,width:50,height:50))
-        ////            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        ////            label.center = CGPoint(x: 160, y: 285)
-        ////            label.textAlignment = .center
-        ////            label.text = "I'm a test label"
-        //            view.backgroundColor = .red
-        ////            self.view.addSubview(label)
-        //            return view
-        //        }()
-        //        annotationView.rightCalloutAccessoryView=rightView
-        //        print ("----------test-----------")
         let myView=UIView()
         myView.backgroundColor = .green
         let widthConstraint = NSLayoutConstraint(item: myView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40)
@@ -78,13 +59,38 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         print(view.annotation!.coordinate)
         let location=view.annotation!.coordinate
         let lat : NSNumber = NSNumber(value: location.latitude)
-        let lng : NSNumber = NSNumber(value: location.longitude)
-        self.buttonViewLabel.text="\(lat),\(lng)"
+        let long : NSNumber = NSNumber(value: location.longitude)
+//        var data: Data
+        
+//        downloadImage(from: view.annotation!)
+        self.buttonViewLabel.text="No"
+        db.collection("Events").whereField("location", isEqualTo: [lat,long]).getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+//                    for document in querySnapshot!.documents {
+//
+//                    }
+//                    let data=querySnapshot!.documents[0].data()
+//                    let name=data["name"] as? String ?? ""
+                    
+                    if(querySnapshot!.documents.count==0){
+                        self.buttonViewButton.setTitle("Create One!", for: .normal)
+                        
+                    }else{
+                        self.buttonViewLabel.text="Yes"
+                        self.buttonViewButton.setTitle("Join!", for: .normal)
+                    }
+                }
+        }
+        
+        
     }
     
+    
     func annotateMap(){
-//        let urlString="https://api.yelp.com/v3/businesses/north-india-restaurant-san-francisco"
-        let urlString="https://api.yelp.com/v3/businesses/search?term=restaurant&latitude=37.786882&longitude=-122.399972"
+        //        let urlString="https://api.yelp.com/v3/businesses/north-india-restaurant-san-francisco"
+        let urlString="https://api.yelp.com/v3/businesses/search?term=cafe&latitude=37.786882&longitude=-122.399972"
         
         if let url = URL(string: urlString) {
             var request = URLRequest(url: url)
@@ -97,20 +103,26 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 //handle response here
                 print ("hey")
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                    print(json)
-                    let business=try JSONDecoder().decode([RawServerResponse].self, from: data!)
-//                    print(business.lat)
-//                    self.lat=business.lat
-//                    self.long=business.long
-//                    self.annotation.coordinate=CLLocationCoordinate2D(latitude: self.lat, longitude: self.long)
-//                    self.annotation.title="the White House"
-//                    self.annotation.subtitle="Trump's home"
-//                    let region=MKCoordinateRegion(center: self.annotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-//                    self.mapView.addAnnotation(self.annotation)
-//                    self.mapView.setRegion(region, animated: true)
-//                    self.mapView.delegate=self
-                    //                            self.mapView.register(SnapshotAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+//                    let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+                    //                    print(json)
+                    let response=try JSONDecoder().decode(FinalResponse.self, from: data!)
+                    
+                    for b in response.businesses{
+                        print(b.name)
+                        let lat=b.coordinates.latitude
+                        let long=b.coordinates.longitude
+                        let annotation=MKPointAnnotation()
+                        annotation.coordinate=CLLocationCoordinate2D(latitude: lat, longitude: long)
+                        annotation.title=b.name
+                        self.mapView.addAnnotation(annotation)
+                        self.mapView.delegate=self
+                        
+                    }
+                    let annotation=MKPointAnnotation()
+                    annotation.coordinate=CLLocationCoordinate2D(latitude: 37.786882, longitude: -122.399972)
+                    let region=MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+                    self.mapView.setRegion(region, animated: true)
+                    
                     
                 }catch let jsonErr{
                     print(jsonErr)
@@ -120,23 +132,15 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
         
         print("finished")
-        
-        
-        //        let annotation=MKPointAnnotation()
-        //           annotation.coordinate=CLLocationCoordinate2D(latitude: 37, longitude: -77)
-        //           annotation.title="the White House"
-        //           annotation.subtitle="Trump's home"
-        //           mapView.addAnnotation(annotation)
-        //           mapView.delegate=self
-        //
-        //         let annotation2=MKPointAnnotation()
-        //        annotation2.coordinate=CLLocationCoordinate2D(latitude: 37.2, longitude: -77.2)
-        //        annotation2.title="the White House2"
-        //        annotation2.subtitle="Trump's home2"
-        //        mapView.addAnnotation(annotation2)
-        //        mapView.delegate=self
-        //
-        //           let region=MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-        //                   mapView.setRegion(region, animated: true)
     }
+    
+    @IBAction func buttonViewButtonPressed(_ sender: Any) {
+        if (buttonViewButton.titleLabel?.text=="Join!"){
+            self.performSegue(withIdentifier: "join", sender: nil)
+        }else{
+            self.performSegue(withIdentifier: "create", sender: nil)
+        }
+//        self.performSegue(withIdentifier: "swipe", sender: nil)
+    }
+    
 }
