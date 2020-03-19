@@ -79,7 +79,7 @@ struct Coordinates: Codable {
 struct Business: Codable{
     let name: String
     let coordinates: Coordinates
-    let image_url: URL
+//    let image_url: URL
     
 }
 
