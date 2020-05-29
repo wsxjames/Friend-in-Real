@@ -17,10 +17,22 @@ class ProfileViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        userProfile.text=Auth.auth().currentUser?.email
+        if let email=Auth.auth().currentUser?.email{
+            userProfile.text="Welcome! \(email)"
+        }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as UIViewController
+               if segue.identifier == "changeProfile" {
+                   destinationVC.title = "Change Profile"
+               } else if segue.identifier == "viewAllEvents" {
+                   destinationVC.title = "View All Events"
+                   destinationVC.view.backgroundColor = UIColor.blue
+               }
+    }
     
+
     
     
     @IBAction func logout(_ sender: Any) {
